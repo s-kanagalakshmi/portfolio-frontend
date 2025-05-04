@@ -10,11 +10,12 @@
 }
 
 .navbar-container {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .logo {
@@ -32,7 +33,9 @@
 }
 
 .nav-links li a {
-  color: white;
+  color:brown;
+
+  /* color: white; */
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
@@ -76,8 +79,10 @@
 .hero-section {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #3b82f6, #6366f1);
-  color: white;
+  background: linear-gradient(to bottom right,rgba(243,164,17,255), rgba(241,187,16,255));
+  color:brown;
+
+  /* color: white; */
   display: flex;
   align-items: center;
   padding-top: 100px;
@@ -99,7 +104,8 @@
 }
 
 .hero-text h1 span {
-  color: #ffffff;
+  color:brown;
+
 }
 
 .hero-text h2 {
@@ -109,7 +115,7 @@
 
 .hero-text p {
   margin: 10px 0;
-  color: rgba(255, 255, 255, 0.85);
+  color:brown;
   max-width: 500px;
 }
 

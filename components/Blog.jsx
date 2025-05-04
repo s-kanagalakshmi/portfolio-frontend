@@ -12,7 +12,9 @@ const Blog = () => {
 
   // Fetch Blogs
   const fetchBlogs = async () => {
-    const res = await axios.get("http://localhost:5000/api/blogs");
+    const res = await axios.get("https://portfolio-backend-yf5a.onrender.com/api/blogs");
+    console.log("Fetched blogs:", res.data);
+
     setBlogs(res.data);
   };
 
@@ -35,14 +37,14 @@ const Blog = () => {
   // Add new blog
   const addBlog = async () => {
     if (!newBlog.title.trim() || !newBlog.content.trim()) return;
-    await axios.post("http://localhost:5000/api/blogs", newBlog);
+    await axios.post("https://portfolio-backend-yf5a.onrender.com/api/blogs", newBlog);
     setNewBlog({ title: "", content: "" });
     fetchBlogs();
   };
 
   // Like a blog
   const likeBlog = async (id) => {
-    await axios.post(`http://localhost:5000/api/blogs/${id}/like`);
+    await axios.post(`https://portfolio-backend-yf5a.onrender.com/api/blogs/${id}/like`);
     fetchBlogs();
   };
 
@@ -51,7 +53,7 @@ const Blog = () => {
     const commentText = comment[id];
     if (!commentText?.trim()) return;
 
-    await axios.post(`http://localhost:5000/api/blogs/${id}/comment`, {
+    await axios.post(`https://portfolio-backend-yf5a.onrender.com/api/blogs/${id}/comment`, {
       text: commentText,
     });
 

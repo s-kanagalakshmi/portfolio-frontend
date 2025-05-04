@@ -27,12 +27,10 @@ signOut(auth)
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <div className="logo">Kanagalakshmi's Portfolio</div>
+                <div className="logo">KL's Portfolio</div>
                 <ul className="nav-links">
                     <li><button className="btn-login" onClick={() => handleNavigation("/")}>Home</button></li>
-                    <li><button className="btn-login" onClick={() => handleNavigation("/about")}>About</button></li>
-                    <li><button className="btn-login" onClick={() => handleNavigation("/contact")}>Contact</button></li>
-                    <li><button className="btn-login" onClick={() => handleNavigation("/blog")}>Blog</button></li>
+                                       <li><button className="btn-login" onClick={() => handleNavigation("/blog")}>Blog</button></li>
                 </ul>
                 <div className="navbar-buttons">
                     <button className="btn-cv">Download CV</button>
