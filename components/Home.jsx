@@ -116,6 +116,7 @@ const Home = () => {
 
             {/* Projects Section */}
             <section className="projects-section" id="portfolio">
+                <h1 style={{textAlign:"center", color:"teal"}}>MY PROJECTS</h1>
                 <div className="container1">
                     {/* <h2 className="section-title">My Projects</h2> */}
                     <div className="projects-grid">

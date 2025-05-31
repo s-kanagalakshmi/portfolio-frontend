@@ -78,9 +78,12 @@
 /* Hero Section */
 .hero-section {
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom right,rgba(243,164,17,255), rgba(241,187,16,255));
-  color:brown;
+  max-height: 65vh;
+  /* background: linear-gradient(to bottom right,rgba(243,164,17,255), rgba(241,187,16,255)); */
+   /* background: linear-gradient(to bottom right, #0f172a, #1e3a8a); */
+     background: linear-gradient(to bottom right, #0e9dfc, #09a4f7);
+
+  color:#1e40af;
 
   /* color: white; */
   display: flex;
@@ -104,7 +107,7 @@
 }
 
 .hero-text h1 span {
-  color:brown;
+  color:#1e40af;
 
 }
 
@@ -115,7 +118,7 @@
 
 .hero-text p {
   margin: 10px 0;
-  color:brown;
+  color:blue;
   max-width: 500px;
 }
 
