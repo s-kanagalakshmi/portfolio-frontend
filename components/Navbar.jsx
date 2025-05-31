@@ -28,16 +28,20 @@ signOut(auth)
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="logo">KL's Portfolio</div>
-                <ul className="nav-links">
+                {/* <ul className="nav-links">
                     <li><button className="btn-login" onClick={() => handleNavigation("/")}>Home</button></li>
-                                       <li><button className="btn-login" onClick={() => handleNavigation("/blog")}>Blog</button></li>
-                </ul>
+                                       {/* <li><button className="btn-login" onClick={() => handleNavigation("/blog")}>Blog</button></li> */}
+                {/* </ul> */}
                 <div className="navbar-buttons">
-                    <button className="btn-cv">Download CV</button>
-                    {logged ?<button className="btn-login" onClick={logout}>Logout</button> :
-                        <button className="btn-login" onClick={() => handleNavigation("/login")}>Login</button>
+                    {/* <button className="btn-cv" >Download CV</button> */}
+                    {/* {logged ?<button className="btn-login" onClick={logout}>Logout</button> : */}
+                        {/* // <button className="btn-login" onClick={() => handleNavigation("/login")}>Login</button> */}
 
-                    }
+                    {/* } */}
+                    <ul className="nav-links">
+                    <li><button className="btn-login" onClick={() => handleNavigation("/")}>Home</button></li>
+                                       {/* <li><button className="btn-login" onClick={() => handleNavigation("/blog")}>Blog</button></li> */}
+                </ul>
                 </div>
             </div>
         </nav>
